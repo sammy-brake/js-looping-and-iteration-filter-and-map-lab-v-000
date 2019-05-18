@@ -19,7 +19,7 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 
 function exactMatch(drivers, match) {
   for (const key in match) {
-    return drivers.filter(driver => driver[key] === match[key]);
+    return drivers.map(driver => driver[key] === match[key]);
   };
 };
 
