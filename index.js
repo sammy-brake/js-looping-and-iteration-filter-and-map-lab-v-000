@@ -22,7 +22,7 @@ function exactMatch(drivers, match) {
   return drivers.map(driver) {
     for (const key in driver) {
       if (key == match) {
-      return driver; 
+      return driver;
     };
     };
   };
