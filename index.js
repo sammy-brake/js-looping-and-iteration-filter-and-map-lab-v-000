@@ -22,3 +22,9 @@ function exactMatch(drivers, match) {
     return drivers.filter(driver => driver[key] === match[key]);
   };
 };
+
+function exactMatchToList(drivers, match) {
+  for (const key in match) {
+    return drivers.filter(driver => driver[key] === match[key]);
+  };
+};
