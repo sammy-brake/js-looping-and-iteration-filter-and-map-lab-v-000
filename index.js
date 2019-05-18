@@ -26,7 +26,8 @@ function exactMatch(drivers, match) {
       };
     };
   });
-}
+  return matchedDrivers;
+};
 //    drivers.map(function(driver) {
 //     for (const key in driver) {
 //       if (key == match) {
