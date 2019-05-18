@@ -22,4 +22,3 @@ function exactMatch(drivers, match) {
     return array.filter(driver => driver['key'] === match['key']);
   };
 };
-
