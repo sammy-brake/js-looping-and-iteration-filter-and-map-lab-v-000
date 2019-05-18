@@ -23,9 +23,7 @@ function exactMatch(drivers, match) {
   };
 };
 
-function exactMatchToList(drivers, match) {
-  const exactMatch = []
-  for (const key in match) {
-    return drivers.map(driver => driver[key] === match[key]);
-  };
-};
+function exactMatchToList(array, obj){
+const list = exactMatch(array, obj)
+return list.map(driver => driver.name)
+}
