@@ -23,7 +23,7 @@ function exactMatch(drivers, match) {
   };
 };
 
-function exactMatchToList(array, obj){
-const list = exactMatch(array, obj)
+function exactMatchToList(drivers, match){
+const list = exactMatch(drivers, match)
 return list.map(driver => driver.name)
 }
